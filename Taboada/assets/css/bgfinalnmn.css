@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: pink;
+  /*overflow-y: hidden;*/
+  /*overflow: hidden;*/
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+section .scroll {
+  width: 100%;
+  display: flex;
+}
+
+section .scroll div {
+  color: #bebebe;
+  font-size: 4em;
+  /*background: rgba(255,255,255,0);*/
+  white-space: nowrap;
+  font-weight: 600;
+  text-transform: uppercase;
+  animation: animate 40s linear infinite;
+  animation-delay: -40s;
+}
+
+section .scroll div:nth-child(2) {
+  animation: animate2 40s linear infinite;
+  animation-delay: -20s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.bg-text-container {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  z-index: -999;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+.body-2 {
+  margin: 0;
+  padding: 0;
+  /*font-family: 'Poppins', sans-serif;*/
+  /*background: pink;*/
+  /*overflow-y: hidden;*/
+  /*overflow: hidden;*/
+}
+
+.body-2 {
+}
+
+html {
+}
+

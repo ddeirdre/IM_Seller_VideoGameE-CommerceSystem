@@ -1,0 +1,30 @@
+.button {
+  border: 2px solid rgba(255,255,255,0);
+  color: rgba(255,255,255,0);
+  font-family: 'RobotoMono', monospace;
+  padding: 25px;
+  width: 170px;
+  margin: 250px auto;
+  text-align: center;
+  position: relative;
+}
+
+.button:hover span:after {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+}
+
+.button:hover span: after {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+}
+
+.button:hover span:before {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+.bodyfirst {
+  overflow: hidden;
+  /*position: relative;*/
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
